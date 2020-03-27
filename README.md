@@ -1,4 +1,4 @@
-# CEF Context Broker - Functional documentation of the enabler
+# CEF Context Broker - Functional Documentation of the Enabler
 
 **Table of Contents**
 1. [Introduction](#introduction)  
