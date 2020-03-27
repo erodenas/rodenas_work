@@ -4,8 +4,12 @@
 1. [Introduction](#introduction)  
     1.1 [How to Access the  Enabler](#subparagraph1)  
     1.1 [Initial configuration Assistant](#subparagraph2)  
-2. [Some paragraph](#paragraph1)
-    1. [Sub paragraph](#subparagraph22)
+2. [Dashboard](#paragraph1)
+    2.1 [Map](#subparagraph3)
+    2.2 [Icons](#subparagraph4)
+    2.3 [Search Bar](#subparagraph5)
+    2.4 [Filters](#subparagraph6)
+    	2.4.1 [Adding Conditions](#subsubparagraph1)
 3. [Another paragraph](#paragraph2)
 
 # 1 Introduction <a name="introduction"></a>
@@ -22,11 +26,11 @@ The user can also add this code in their FIWARE lab and work in the cloud instea
 If the user decides to empty the map, this assistant will appear again.  
 
 ![](https://github.com/erodenas/rodenas_work/blob/master/Diapositiva1.PNG)
-# 2 Dashboard
-## 2.1 Maps
+# 2 Dashboard <a name="paragraph1"></a>
+## 2.1 Map <a name="subparagraph3"></a>
 The map that supports the Enabler is the open source World map [OpenStreetMaps](https://www.openstreetmap.org/). Since the CB has its real-time data geolocalized, it will appear automatically when the user adds any new CB.   
 The Enabler supports the use of various CB, therefore, all of the CBs added will be shown in the map with the real-time information they provide from the sensors.
-## 2.2 Icons
+## 2.2 Icons <a name="subparagraph4"></a>
 The icons that appear in the map respond to a list of categories that classifies the data in different groups depending on the type of information it gives:
 -    Alerts: for information about risks or warnings.
 -    Smart Environment: for Environment, Waste management and Weather.
@@ -43,12 +47,12 @@ The icons that appear in the map respond to a list of categories that classifies
 
 If more information about these categories is needed, the FIWARE data models can be consulted through this  [link](https://www.fiware.org/developers/data-models/).
 
-## 2.3 Search Bar
+## 2.3 Search Bar <a name="subparagraph5"></a>
 A search bar is available to localize places in a faster way. The user has to introduce the name of the location they wish to see and it will automatically appear in the map. If the location does not appear, the user may try a similar location.
-## 2.4 Filters
+## 2.4 Filters <a name="subparagraph6"></a>
 The user will be able to add dynamic filters to eliminate certain icons from the map in case they want to focus in a specific aspect of any of the attributes. For example, if there is a need to localize the higher priority risk alerts in order to take actions faster.  
 If the user wants to add any filter, the conditions will be available when unfolding the attribute options as seen in illustration x. Furthermore, the user will be able to uncheck any of the information that was previously added in the CB’s initial configuration. If the user wants to eliminate any of the entities or attributes that were included before, it will be possible to modify this configuration from this interface.
-### 2.4.1 Adding Conditions
+### 2.4.1 Adding Conditions<a name="subsubparagraph1"></a>
 In order to add a new condition to any of the attributes the user has to press the button shown in the illustration x. It appears automatically when displaying the options for any attribute.   
 Depending on the type of attribute, text or numerical, a different type of filter will appear and the user will be able to add the desired condition.
 - Numerical conditions. The user introduces the desired numeric value and chooses between:
