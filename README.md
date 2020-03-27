@@ -17,7 +17,8 @@ Once the user has correctly displayed the code following the technical documenta
 The user can also add this code in their FIWARE lab and work in the cloud instead of local, also explained in the technical documentation.
 ## 1.2 Initial configuration Assistant
  The first time the user access to the enabler there will be an initial configuration assistant so as to help the user familiarize with its configuration. Hence, a pop-up will appear giving the option to the user to be redirected to the configuration window.  
-If the user decides to empty the map, this assistant will appear again.
+If the user decides to empty the map, this assistant will appear again.  
+
 
 # 2 Dashboard
 ## 2.1 Maps
