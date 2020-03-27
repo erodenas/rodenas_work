@@ -9,7 +9,7 @@
     2.2 [Icons](#subparagraph4)  
     2.3 [Search Bar](#subparagraph5)  
     2.4 [Filters](#subparagraph6)  
-        2.4.1 [Adding Conditions](#subsubparagraph1)  
+    ...2.4.1 [Adding Conditions](#subsubparagraph1)  
 3. [Another paragraph](#paragraph2)
 
 # 1 Introduction <a name="introduction"></a>
