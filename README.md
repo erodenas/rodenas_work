@@ -34,7 +34,7 @@ The user can also add this code in their FIWARE lab and work in the cloud instea
 If the user decides to empty the map, this assistant will appear again.  
 
 ![](https://github.com/erodenas/rodenas_work/blob/master/Diapositiva1.PNG)
-> *Illustration 1. Initial COnfiguration Pop-up*
+> *Illustration 1. Initial Configuration Pop-up*
 # 2 Dashboard <a name="paragraph1"></a>
 ## 2.1 Map <a name="subparagraph3"></a>
 The map that supports the Enabler is the open source World map [OpenStreetMaps](https://www.openstreetmap.org/). Since the CB has its real-time data geolocalized, it will appear automatically when the user adds any new CB.   
