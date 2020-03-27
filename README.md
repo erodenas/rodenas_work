@@ -14,7 +14,7 @@
     3.1 [Configuring Context Broker](#subparagraph7)  
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3.1.1 [Services](#subsubparagraph2)   
     3.2 [Historical Data Tools](#subparagraph8) 
-4. [Dashboard](#paragraph3)  
+4. [Historical Data](#paragraph3)  
     4.1 [Range](#subparagraph9)  
     4.2 [Tables](#subparagraph10)  
     4.3 [Graphics](#subparagraph11)  
