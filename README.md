@@ -1,18 +1,23 @@
 # CEF Context Broker - Functional documentation of the enabler
 
 **Table of Contents**
-#### 1 [Introduction](https://github.com/erodenas/rodenas_work/blob/master/README.md "1%20Introduction") 
+1. [Introduction](#introduction)  
+    1.1 [How to Access the  Enabler](#subparagraph1)  
+    1.1 [Initial configuration Assistant](#subparagraph2)  
+2. [Some paragraph](#paragraph1)
+    1. [Sub paragraph](#subparagraph22)
+3. [Another paragraph](#paragraph2)
 
-# 1 Introduction
+# 1 Introduction <a name="introduction"></a>
 The aim of this document is to create a functional guide to ensure the understanding of the enabler, so the users are able to exploit it to its fullest.  
 This enabler is pretended to ease the use of Context Broker and to fasten its learning curve for new stakeholders to experiment. It consists in a visualization layer over the Sandbox environment of the Context Broker used for playground purposes.  
 The enabler will be available for use in local or remote environments and will help the user to further deepen the knowledge about the use of Context Brokers and their uses. Furthermore, there is the possibility to represent it in visual forms as tables or graphics in the visualization layer and export compatible historical data stored from the sensors so as to allow the user to use it with different applications.
 
-## 1.1 How to Acces the Enabler
+## 1.1 How to access the Enabler <a name="subparagraph1"></a>
 In order to access the Enabler, the user will have to access to the link provided and download the Enabler's code, then display the code in their Context Broker. In case of any doubt, this process is explained in the technical manual that can be found here. The user can follow this manual to correctly implement the enabler in the Context Broker.  
 Once the user has correctly displayed the code following the technical documentation provided, to access the enabler the following link should be clicked or copied to the web browser's search bar.  
 The user can also add this code in their FIWARE lab and work in the cloud instead of local, also explained in the technical documentation.
-## 1.2 Initial configuration Assistant
+## 1.2 Initial configuration Assistant <a name="subparagraph2"></a>
  The first time the user access to the enabler there will be an initial configuration assistant so as to help the user familiarize with its configuration. Hence, a pop-up will appear giving the option to the user to be redirected to the configuration window.  
 If the user decides to empty the map, this assistant will appear again.  
 
