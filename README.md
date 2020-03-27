@@ -1,10 +1,7 @@
 # CEF Context Broker - Functional documentation of the enabler
 
 **Table of Contents**
-
-[TOCM]
-
-[TOC]
+#### 1 [Introduction](https://github.com/rodenas_work/README.md "Introduction")
 
 # 1 Introduction
 The aim of this document is to create a functional guide to ensure the understanding of the enabler, so the users are able to exploit it to its fullest.  
