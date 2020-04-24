@@ -68,7 +68,7 @@ If various Context Brokers are added, they will appear as a list where each one 
 >*IMAGEN 8*   
 >*IMAGEN 9*  
 
-## 3.1.1 Services <a name="subsubparagraph2"></a>
+### 3.1.1 Services <a name="subsubparagraph2"></a>
 The information of a Context Broker can be organized and divided in what is called “Services”. With this, the information can be encapsulated in different groups and access to them has to be granted. The aim of this tool, that is optional, is to increase the security of the CB data, by dividing it in groups and only grant access to specific users. A user may have access to one service but not to the rest. Therefore, the user has the option of adding a service if necessary. If more information is needed, it can be found here.
 If the user has access to one or several services, they can be added, edited and eliminated. In order to add a new service to a Context Broker, the checkbox marked in the illustration 22 should be clicked. A new box with the Services configuration will be opened where the user can start configuring them.   
 
@@ -93,17 +93,27 @@ A list of the introduced services will appear where the user can edit by clickin
 >*IMAGEN 16*  
 >*IMAGEN 17*  
 
+  
+
 ## 2.2 Historical Data Tools <a name="subparagraph8"></a>
-The use of the historical data is completely optional. If the user does not wish to use it, is configuration is avoidable with any impact to the rest of the Enabler.   
-The historical data has available two tools that must be configured for each of the Context Brokers as they work together, if any of the tools is not available, the configuration and exportation of the historical data will not be possible.  
-The first of this two tools is Cygnus. It acts as a connector between the CB’s information that the sensors produce and the MongoDB database that will storage that information. Basically, Cygnus storages the information the CB produces and creates the historical data for the database. More information can be found at this [link](https://fiware-cygnus.readthedocs.io/en/latest/).    
-The second tool is STH-Comet. In essence, this tool retrieves the historical data created by Cygnus from the database and allows the user to work with it in forms of tables or graphics. Furthermore, it can be exported to a CSV file. If needed, the user can find more information [here](https://fiware-sth-comet.readthedocs.io/en/latest/).    
+In order to complement the real-time data, the Enabler offers the possibility to combine it with historical data. Hence, the user is able to optionally configure tools for its implementation in the Configuration page.
+The historical data in the Enabler supports two tools that must be configured for each of the Context Brokers as they work together, if any of the tools is not available, the visualization of the historical data will not be possible. The supported tools for the historical data are Cygnus and STH-Comet.
+### 2.2.1 Cygnus <a name="subsubparagraph2"></a>  
+The first of this two tools is Cygnus. It acts as a connector between the Context Broker’s information that the sensors produce and the MongoDB database that will storage that information. Basically, Cygnus is subscribed to the information the CB produces and creates the historical data for the database. More information can be found at this [link](https://fiware-cygnus.readthedocs.io/en/latest/).   
+### 2.2.2 STH-Comet <a name="subsubparagraph3"></a>    
+The second tool is STH-Comet. In essence, this tool retrieves the historical data created by Cygnus from the database and allows the user to consult and work with it. If needed, the user can find more information [here](https://fiware-sth-comet.readthedocs.io/en/latest/).  
+### 2.2.3 Tool Configuration <a name="subsubparagraph4"></a>    
 In conclusion, if the user wants to use the historical data, Cygnus and STH-Comet must be configured for each of the Context Brokers. The user should introduce the desired URL and the chosen port for each of the tools and check the availability for them. If any of the tools is not available, the configuration and exportation of the historical data will not be possible.
-# 2 Dashboard <a name="paragraph1"></a>
-## 2.1 Map <a name="subparagraph3"></a>
+If the introduced URL is not correct, an error message informing the unsuccessful connection will appear.
+
+>*IMAGEN 18*    
+>*IMAGEN 19*  
+
+# 3 Dashboard <a name="paragraph1"></a>
+## 3.1 Map <a name="subparagraph3"></a>
 The map that supports the Enabler is the open source World map [OpenStreetMaps](https://www.openstreetmap.org/). Since the CB has its real-time data geolocalized, it will appear automatically when the user adds any new CB.   
 The Enabler supports the use of various CB, therefore, all of the CBs added will be shown in the map with the real-time information they provide from the sensors.
-## 2.2 Icons <a name="subparagraph4"></a>
+## 3.2 Sensors <a name="subparagraph4"></a>
 The icons that appear in the map respond to a list of categories that classifies the data in different groups depending on the type of information it gives:
 -    Alerts: for information about risks or warnings.
 -    Smart Environment: for Environment, Waste management and Weather.
@@ -120,7 +130,7 @@ The icons that appear in the map respond to a list of categories that classifies
 
 If more information about these categories is needed, the FIWARE data models can be consulted through this  [link](https://www.fiware.org/developers/data-models/).
 
-## 2.3 Search Bar <a name="subparagraph5"></a>
+## 3.3 Search Bar <a name="subparagraph5"></a>
 A search bar is available to localize places in a faster way. The user has to introduce the name of the location they wish to see and it will automatically appear in the map. If the location does not appear, the user may try a similar location.
 ## 2.4 Filters <a name="subparagraph6"></a>
 The user will be able to add dynamic filters to eliminate certain icons from the map in case they want to focus in a specific aspect of any of the attributes. For example, if there is a need to localize the higher priority risk alerts in order to take actions faster.  
