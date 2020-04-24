@@ -28,20 +28,77 @@
     4.3 [CSV Data Export](#subparagraph12)
 
 # 1 Introduction <a name="introduction"></a>
-The aim of this document is to create a functional guide to ensure the understanding of the enabler, so the users are able to exploit it to its fullest.  
-This enabler is pretended to ease the use of Context Broker and to fasten its learning curve for new stakeholders to experiment. It consists in a visualization layer over the Sandbox environment of the Context Broker used for playground purposes.  
-The enabler will be available for use in local or remote environments and will help the user to further deepen the knowledge about the use of Context Brokers and their uses. Furthermore, there is the possibility to represent it in visual forms as tables or graphics in the visualization layer and export compatible historical data stored from the sensors so as to allow the user to use it with different applications.
+The aim of this document is to create a functional guide to ensure the understanding of the enabler, so the users are able to exploit it to its fullest.
+This enabler has been created to ease the understanding of data and use of the Context Broker and to fasten its learning curve for new stakeholders who would like to experiment. It consists in a visualization layer over the Sandbox environment of the Context Broker used for playground purposes.
+The enabler is available for use in local or remote environments. There is available an installation manual to ease its implementation and deployment. 
+On the other hand, the enabler gives the opportunity to play with a sensor’s historical data, if configured. Having selected a range of time, it can be represented in a table or even downloaded in a CSV file to further exploit. Furthermore, one of the attributes at a time can be selected and represented in a graphic.  
 
 ## 1.1 How to access the Enabler <a name="subparagraph1"></a>
-In order to access the Enabler, the user will have to access to the link provided and download the Enabler's code, then display the code in their Context Broker. In case of any doubt, this process is explained in the technical manual that can be found here. The user can follow this manual to correctly implement the enabler in the Context Broker.  
-Once the user has correctly displayed the code following the technical documentation provided, to access the enabler the following link should be clicked or copied to the web browser's search bar.  
-The user can also add this code in their FIWARE lab and work in the cloud instead of local, also explained in the technical documentation.
-## 1.2 Initial configuration Assistant <a name="subparagraph2"></a>
- The first time the user access to the enabler there will be an initial configuration assistant so as to help the user familiarize with its configuration. Hence, a pop-up will appear giving the option to the user to be redirected to the configuration window.  
-If the user decides to empty the map, this assistant will appear again.  
+Once the Enable has been deployed either on local, remote server or Sandbox, the user is able to access via web browser, as this Enabler is a web application. This deployment is further explained in the technical documentation, which can be found here.
+In order to access the user should introduce in the web browser’s search bar the URL where the Enabler has been deployed, i.e. localhost:5200 is set by default.
+>*IMAGEN 1*
 
-![](https://github.com/erodenas/rodenas_work/blob/master/Diapositiva1.PNG)
-> *Illustration 1. Initial Configuration Pop-up*
+## 1.2 Initial configuration Assistant <a name="subparagraph2"></a>
+Once the user access for the first time to the Enabler, there is not information to be displayed. It is necessary to configure one instance of a Context Broker at least. Hence, a pop-up will appear giving the option to the user to be redirected to the Configuration page and start configuring a new instance.  
+> *IMAGEN 2*
+
+# 2 Configuration <a name="paragraph2"></a>
+With the purpose of facilitating the integration of one or various Context Brokers and historical data tools, the Enabler provides a configuration panel that is visual and intuitive. The user can use this panel to configure the information that is desired to be visualized.
+This configuration is divided into three sections: how to configure and edit a Context Broker, how to add services, if any, and how to configure the historical data tools if necessary.   
+
+## 2.1 Configuring Context Broker <a name="subparagraph7"></a>
+The “Add Context Broker” button at the top part of the illustration x, should be clicked to a new configuration tab for a Context Broker. For the first access, the tab for the configuration of a new instance is automatically opened.
+When an empty tab is open, the user should introduce the desired name for that particular Context Broker and the URL where the data is available. Note that there may be the need to indicate the Context Broker’s port if the instance is serving in determined one. For example, if it is configured in local and the port number is 1026, the URL should be localhost:1026.
+When that configuration is settled, the user should check the status of that Context Broker and ensure that the configuration provided is valid and ready to go, this can be done by clicking the yellow checkbox next to the URL.  
+>*IMAGEN 3*  
+>*IMAGEN 4*    
+
+If the URL introduced for the Context Broker is incorrect, a message under the URL box will appear informing of the unsuccessful connection.      
+>*IMAGEN 5*  
+
+
+After the initial configuration of the Context Broker is cleared, the user should choose the desired entities and attributes from it by clicking the bottom option shown in the illustration 9.  
+
+>*IMAGEN 6*  
+>*IMAGEN 7*  
+
+The entities and attributes can be selected and unselected by clicking on the checkbox or the name of the desired option. If no entities are selected in the Context Broker an error message will appear, as shown in illustration x.  
+If various Context Brokers are added, they will appear as a list where each one can be displayed for its edition. If the user desires to delete a Context Broker the icon at the right part of the name should be clicked. A message will appear asking to confirm the action, this should be done by clicking the delete option in illustration x.     
+
+>*IMAGEN 8*   
+>*IMAGEN 9*  
+
+## 3.1.1 Services <a name="subsubparagraph2"></a>
+The information of a Context Broker can be organized and divided in what is called “Services”. With this, the information can be encapsulated in different groups and access to them has to be granted. The aim of this tool, that is optional, is to increase the security of the CB data, by dividing it in groups and only grant access to specific users. A user may have access to one service but not to the rest. Therefore, the user has the option of adding a service if necessary. If more information is needed, it can be found here.
+If the user has access to one or several services, they can be added, edited and eliminated. In order to add a new service to a Context Broker, the checkbox marked in the illustration 22 should be clicked. A new box with the Services configuration will be opened where the user can start configuring them.   
+
+>*IMAGEN 10*  
+
+The user should click the “Add Service” option, shown at the top of the illustration x, so as to add as many Services as needed.  
+
+>*IMAGEN 11*  
+
+The user will need to configure the name of the service and, if desired, the service path. To check its availability, the “choose entities and attributes” button should be clicked. If this configuration is incorrect a message indicating so will appear informing that there are no entities for it.     
+
+>*IMAGEN 12*  
+>*IMAGEN 13*  
+
+If the configuration is correct, a list of the available entities and attributes will appear, where the user can select or unselect the desired ones. However, at least one entity has to be selected, if not an error message, shown in illustration 27, will appear.  
+
+>*IMAGEN 14*  
+>*IMAGEN 15*  
+
+A list of the introduced services will appear where the user can edit by clicking the service name or deleted by clicking the icon in the right part of the illustration. A confirmation message will appear where the user should click the delete option to finish the action.    
+
+>*IMAGEN 16*  
+>*IMAGEN 17*  
+
+## 2.2 Historical Data Tools <a name="subparagraph8"></a>
+The use of the historical data is completely optional. If the user does not wish to use it, is configuration is avoidable with any impact to the rest of the Enabler.   
+The historical data has available two tools that must be configured for each of the Context Brokers as they work together, if any of the tools is not available, the configuration and exportation of the historical data will not be possible.  
+The first of this two tools is Cygnus. It acts as a connector between the CB’s information that the sensors produce and the MongoDB database that will storage that information. Basically, Cygnus storages the information the CB produces and creates the historical data for the database. More information can be found at this [link](https://fiware-cygnus.readthedocs.io/en/latest/).    
+The second tool is STH-Comet. In essence, this tool retrieves the historical data created by Cygnus from the database and allows the user to work with it in forms of tables or graphics. Furthermore, it can be exported to a CSV file. If needed, the user can find more information [here](https://fiware-sth-comet.readthedocs.io/en/latest/).    
+In conclusion, if the user wants to use the historical data, Cygnus and STH-Comet must be configured for each of the Context Brokers. The user should introduce the desired URL and the chosen port for each of the tools and check the availability for them. If any of the tools is not available, the configuration and exportation of the historical data will not be possible.
 # 2 Dashboard <a name="paragraph1"></a>
 ## 2.1 Map <a name="subparagraph3"></a>
 The map that supports the Enabler is the open source World map [OpenStreetMaps](https://www.openstreetmap.org/). Since the CB has its real-time data geolocalized, it will appear automatically when the user adds any new CB.   
@@ -81,21 +138,7 @@ Depending on the type of attribute, text or numerical, a different type of filte
 	- Contains “Word”.
 	- Has prefix or suffix.
 
-# 3 Configuration <a name="paragraph2"></a>
-There will be an administration panel available for the user, so as to configure the different context brokers the user may want to add and their entities.
-## 3.1 Configuring Context Broker <a name="subparagraph7"></a>
-When the user wants add a new Context Broker, the “Add Context Broker” option at the left part of the illustration x, should be clicked. A configuration page will be opened where the user should introduce the desired name for that particular Context Broker, the URL where the data is available and the number of the chosen port. When that configuration is settled the user should check the status of that Context Broker and ensure that the configuration provided is valid and ready to go.   
-After the initial configuration of the Context Broker is cleared, it will appear in the list of available Context Brokers, shown in the left part of the illustration x.
-## 3.1.1 Services <a name="subsubparagraph2"></a>
-The information of a Context Broker can be organized and divided in what is called “Services”. With this, the information can be encapsulated in different groups and access to them has to be granted. The aim of this tool, that is optional, is to increase the security of the CB data, by dividing it in groups and only grant access to specific users. A user may have access to one service but not to the rest. Therefore, the user has the option of adding a service if necessary.  
-If the user has access to one or several services, they can be added, edited and eliminated. In order to add a new service to a Context Broker, the user should click the “Add Service” option, shown at the bottom of the illustration x.  
-The user will need to configure the name of the service and the service path, at the right part of the service list, the user will find the edit and eliminate options, in case they want to modify the initial configuration that was given.
-## 3.2 Historical Data Tools <a name="subparagraph8"></a>
-The use of the historical data is completely optional. If the user does not wish to use it, is configuration is avoidable with any impact to the rest of the Enabler.   
-The historical data has available two tools that must be configured for each of the Context Brokers as they work together, if any of the tools is not available, the configuration and exportation of the historical data will not be possible.
-The first of this two tools is Cygnus. It acts as a connector between the CB’s information that the sensors produce and the MongoDB database that will storage that information. Basically, Cygnus storages the information the CB produces and creates the historical data for the database. More information can be found at this [link](https://fiware-cygnus.readthedocs.io/en/latest/).  
-The second tool is STH-Comet. In essence, this tool retrieves the historical data created by Cygnus from the database and allows the user to work with it in forms of tables or graphics. Furthermore, it can be exported to a CSV file. If needed, the user can find more information [here](https://fiware-sth-comet.readthedocs.io/en/latest/).  
-In conclusion, if the user wants to use the historical data, Cygnus and STH-Comet must be configured for each of the Context Brokers. The user should introduce the desired URL and the chosen port for each of the tools and check the availability for them. If any of the tools is not available, the configuration and exportation of the historical data will not be possible.
+
 # 4 Historical data <a name="paragraph3"></a>
 When selecting a sensor there might be a “Show historical data” option available in the pop-up as shown in illustration x. In order for this option to appear, the Context Broker that provides information for that selected sensed has had to be integrated with the historical data tools aforementioned.   
 IMAGEN  
